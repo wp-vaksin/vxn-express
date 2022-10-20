@@ -15,11 +15,14 @@ class Plugin{
     public static function run() {
 		self::check_requirements();
 
+		load_plugin_textdomain( 'vxn-express', false, dirname( plugin_basename(VXN_EXPRESS_CORE_PLUGIN_FILE) ) . '/languages' ); 
+		
 		add_action('breakdance_loaded', function() {
 			Breakdance::register();
 		});
 
-		add_action( 'plugins_loaded', function() {
+		add_action( 'plugins_loaded', function() {			
+
 			if( is_admin() ){
 				add_action('vxn_express_loaded', function() {
 					Admin_menu::add();

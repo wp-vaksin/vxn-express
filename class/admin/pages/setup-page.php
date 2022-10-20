@@ -30,7 +30,7 @@ class Setup_Page extends Page {
             // ->add_hr_bottom()
             
             ->add_field((new Text_field('txt-phone-format'))            
-                ->set_title('Phone Display Format'));
+                ->set_title(__('Phone Display Format', 'vxn-express')));
             
     }
 }

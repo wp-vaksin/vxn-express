@@ -28,45 +28,45 @@ class Whatsapp_Page extends Page {
     /** @return Section  */
     protected function settings_section() {
         return (new Section('settings'))
-            ->set_title('Setting WhatsApp')
+            ->set_title(__('WhatsApp Setting', 'vxn-express'))
             ->add_hr_bottom()
             ->add_field(
                 (new Phone_Field('txt-wa-no'))            
-                ->set_title('No. WhatsApp')
-                ->set_description('Isi dengan no nomor WhatsApp lengkap, contoh: 628123456789')
-                ->set_placeholder('628123456789')
+                ->set_title(__('WhatsApp Number', 'vxn-express'))
+                ->set_description(__('Fill in with the complete WhatsApp number e.g. 6281220003131', 'vxn-express'))
             )
             ->add_field(
                 (new Checkbox('chk-show-form'))
-                ->set_title('Show Form')
-                ->set_text_right('Tampilkan form sebelum memanggil WhatsApp')
+                ->set_title(__('Show Form', 'vxn-express'))
+                ->set_text_right(__('Show Popup form before redirect to WhatsApp', 'vxn-express'))
+                ->set_description(__('You need to create Breakdance Popup for this function, please read our documentation', 'vxn-express'))
             );        
     }
 
     /** @return Section  */
     protected function template_section() {
         return (new Section('template'))
-            ->set_title('Text Template')
+            ->set_title(__('Text Template', 'vxn-express'))
             ->add_hr_bottom()       
             ->add_field(
                 (new Text_Area('txt-wa-text-default'))            
-                ->set_title('Default Text')
+                ->set_title(__('Default Text', 'vxn-express'))
             )
             ->add_field(
                 (new Text_Area('txt-wa-text-order'))            
-                ->set_title('Order Text')
+                ->set_title(__('Order Text', 'vxn-express'))
             )
             ->add_field(
                 (new Text_Area('txt-wa-text-consult'))            
-                ->set_title('Konsultasi')
+                ->set_title(__('Consult Text', 'vxn-express'))
             )
             ->add_field(
                 (new Text_Area('txt-wa-text-consult-product'))            
-                ->set_title('Konsultasi Produk')
+                ->set_title(__('Product Consult Text', 'vxn-express'))
             )
             ->add_field(
                 (new Text_Area('txt-wa-text-appointment'))            
-                ->set_title('Appointment')
+                ->set_title(__('Appointment Text', 'vxn-express'))
             );
     }      
 

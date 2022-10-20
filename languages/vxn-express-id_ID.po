@@ -1,0 +1,133 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2022-10-20 12:08+0700\n"
+"PO-Revision-Date: 2022-10-20 12:09+0700\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: id_ID\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 3.1.1\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: __\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: class/admin/admin-menu.php:43
+msgid "Contact"
+msgstr "Kontak"
+
+#: class/admin/pages/contact-page.php:34
+msgid "Contact Detail"
+msgstr "Detail Kontak"
+
+#: class/admin/pages/contact-page.php:37
+msgid "Phone"
+msgstr "No. Telp"
+
+#: class/admin/pages/contact-page.php:38
+msgid "Fill in with the complete telephone number e.g. +6281220003131"
+msgstr "Isi dengan nomor telepon lengkap, misalnya +6281220003131"
+
+#: class/admin/pages/contact-page.php:40
+msgid "Email"
+msgstr "Email"
+
+#: class/admin/pages/contact-page.php:42
+msgid "Location"
+msgstr "Lokasi"
+
+#: class/admin/pages/contact-page.php:44
+msgid "Google Business Profile Name"
+msgstr "Nama Google Profil Bisnis"
+
+#: class/admin/pages/contact-page.php:51
+msgid "Social Media"
+msgstr "Media Sosial"
+
+#: class/admin/pages/contact-page.php:53
+msgid "Facebook URL"
+msgstr "Facebook URL"
+
+#: class/admin/pages/contact-page.php:55
+msgid "Instagram URL"
+msgstr "Instagram URL"
+
+#: class/admin/pages/contact-page.php:57
+msgid "Twitter URL"
+msgstr "Twitter URL"
+
+#: class/admin/pages/contact-page.php:59
+msgid "Youtube URL"
+msgstr "Youtube URL"
+
+#: class/admin/pages/contact-page.php:61
+msgid "LinkedIn URL"
+msgstr "LinkedIn URL"
+
+#: class/admin/pages/setup-page.php:33
+msgid "Phone Display Format"
+msgstr "Format Tampilan No. Telp"
+
+#: class/admin/pages/whatsapp-page.php:31
+msgid "WhatsApp Setting"
+msgstr "Setting WhatsApp"
+
+#: class/admin/pages/whatsapp-page.php:35
+msgid "WhatsApp Number"
+msgstr "No. WhatsApp"
+
+#: class/admin/pages/whatsapp-page.php:36
+msgid "Fill in with the complete WhatsApp number e.g. 6281220003131"
+msgstr "Isi dengan nomor WhatsApp lengkap, misalnya 6281220003131"
+
+#: class/admin/pages/whatsapp-page.php:40
+msgid "Show Form"
+msgstr "Tampilkan Form"
+
+#: class/admin/pages/whatsapp-page.php:41
+msgid "Show Popup form before redirect to WhatsApp"
+msgstr "Tampilkan Form Popup sebelum dialihkan ke WhatsApp"
+
+#: class/admin/pages/whatsapp-page.php:42
+msgid ""
+"You need to create Breakdance Popup for this function, please read our "
+"documentation"
+msgstr ""
+"Untuk mengaktifkan fungsi ini Anda harus membuat Breakdance Popup, silakan "
+"baca dokumentasi kami"
+
+#: class/admin/pages/whatsapp-page.php:49
+msgid "Text Template"
+msgstr "Template Teks"
+
+#: class/admin/pages/whatsapp-page.php:53
+msgid "Default Text"
+msgstr "Teks Default"
+
+#: class/admin/pages/whatsapp-page.php:57
+msgid "Order Text"
+msgstr "Teks Order"
+
+#: class/admin/pages/whatsapp-page.php:61
+msgid "Consult Text"
+msgstr "Teks Konsultasi"
+
+#: class/admin/pages/whatsapp-page.php:65
+msgid "Product Consult Text"
+msgstr "Teks Konsultasi Produk"
+
+#: class/admin/pages/whatsapp-page.php:69
+msgid "Appointment Text"
+msgstr "Teks Janji Temu"
+
+#~ msgid "Address"
+#~ msgstr "Alamat"
+
+#~ msgid "To display your map based on place and location"
+#~ msgstr "Untuk menampilkan peta Anda berdasarkan tempat dan lokasi"
+
+#~ msgid "Place"
+#~ msgstr "Tempat"

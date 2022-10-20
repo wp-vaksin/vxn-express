@@ -38,7 +38,7 @@ class Contact_Address_Map extends StringField
 
     public function handler($attributes): StringData
     {
-        $url = 'https://www.google.com/maps/search/?api=1&query='. urlencode(Options::get('contact')['txt-address']);
+        $url = 'https://www.google.com/maps/search/?api=1&query='. urlencode(Options::get('contact')['txt-place']);
         return StringData::fromString($url); 
     }
 }

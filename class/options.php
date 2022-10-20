@@ -55,13 +55,14 @@ class Options {
 	/** @return string[]  */
 	private static function contact_options_default(){
         return [
-			'txt-email'=> '',
-			'txt-phone'=> '',			
-			'txt-address'=> '',
-			'txt-facebook'=> '',
-			'txt-instagram'=> '',
-			'txt-twitter'=> '',
-			'txt-youtube'=> '',
+			'txt-email' => '',
+			'txt-phone' => '',
+			'txt-place'	=> '',
+			'txt-address' => '',
+			'txt-facebook' => '',
+			'txt-instagram' => '',
+			'txt-twitter' => '',
+			'txt-youtube' => '',
 			'txt-linkedin' => ''
         ];
 	}	

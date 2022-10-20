@@ -40,7 +40,7 @@ class Admin_menu{
             ->set_page(new Setup_Page()),
 
         'contact' => (new Menu('vxn-express-contact'))
-            ->set_title('Contact')
+            ->set_title(__('Contact', 'vxn-express'))
             ->set_page(new Contact_Page()),
 
         'whatsapp' => (new Menu('vxn-express-whatsapp'))
