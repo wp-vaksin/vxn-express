@@ -17,8 +17,8 @@ class Shortcodes {
 	/** @return void  */
 	private static function add_vxn_shortcodes() {
 		
-		if ( ! shortcode_exists( 'format-idr' ) ){
-			add_shortcode( 'format-idr', function( $atts, $content ) {
+		if ( ! shortcode_exists( 'vxn-format-idr' ) ){
+			add_shortcode( 'vxn-format-idr', function( $atts, $content ) {
 				$content = do_shortcode($content);
 				return esc_html('Rp. ' . number_format($content,0,",","."));
 			} );	

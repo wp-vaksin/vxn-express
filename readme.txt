@@ -19,7 +19,7 @@ Express setup for contact and WhatsApp text template for Breakdance website buil
 
 * The data you input in the options page can be used via Breakdance dynamic data
 * The data also can be used by shortcodes:
-[format-idr]
+[vxn-format-idr]
 [vxn-contact-phone]
 [vxn-contact-phone-url]
 [vxn-contact-phone-display]
