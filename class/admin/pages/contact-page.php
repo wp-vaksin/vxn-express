@@ -39,7 +39,7 @@ class Contact_Page extends Page {
             ->add_field((new Email_Field('txt-email'))
                 ->set_title(__('Email', 'vxn-express')))
             ->add_field((new Text_Area('txt-address'))
-                ->set_title(__('Location', 'vxn-express')))
+                ->set_title(__('Address', 'vxn-express')))
             ->add_field((new Text_field('txt-place'))
                 ->set_title(__('Google Business Profile Name', 'vxn-express')));
 

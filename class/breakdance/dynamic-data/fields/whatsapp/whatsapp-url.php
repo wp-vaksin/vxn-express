@@ -11,7 +11,7 @@ class Whatsapp_Url extends StringField
      */
     public function label()
     {
-        return 'WhatsApp URL';
+        return __('WhatsApp URL', 'vxn-express');
     }
 
     /**
@@ -19,7 +19,7 @@ class Whatsapp_Url extends StringField
      */
     public function category()
     {
-        return 'Express WhatsApp';
+        return __('Express WhatsApp', 'vxn-express');
     }
 
     /**
@@ -48,11 +48,11 @@ class Whatsapp_Url extends StringField
                 'type' => 'dropdown',
                 'layout' => 'vertical',
                 'items' => [
-                    ['text' => 'Default', 'value' => '[vxn-wa-text]'], 
-                    // ['text' => 'Template Order', 'value' => '[vxn-wa-text-order]'],
-                    ['text' => 'Order', 'value' => 'Order'],
-                    ['text' => 'Konsultasi Umum', 'value' => '[vxn-wa-text-consult]'],
-                    ['text' => 'Konsultasi Produk', 'value' => '[vxn-wa-text-consult-product]'],
+                    ['text' => __('Default Text', 'vxn-express'), 'value' => '[vxn-wa-text]'], 
+                    ['text' => __('Order Text', 'vxn-express'), 'value' => 'Order'],
+                    ['text' => __('Consult Text', 'vxn-express'), 'value' => '[vxn-wa-text-consult]'],
+                    ['text' => __('Product Consult Text', 'vxn-express'), 'value' => 'Konsul Produk'],
+                    ['text' => __('Appointment Text', 'vxn-express'), 'value' => '[vxn-wa-text-appointment]'],
                     ['text' => 'Custom Text', 'value' => 'Custom'],
                 ]
             ]),
@@ -66,16 +66,16 @@ class Whatsapp_Url extends StringField
                     'value' => 'Custom'
                 ]
             ]),
-            // \Breakdance\Elements\control('product_param', 'Nama Produk', [
-            //     'type' => 'text',
-            //     'layout' => 'vertical',
-            //     'textOptions' => ['multiline' => true],
-            //     'condition' => [
-            //         'path' => '%%CURRENTPATH%%.whatsapp_text',
-            //         'operand' => 'equals',
-            //         'value' => 'Order'
-            //     ]
-            // ])
+            \Breakdance\Elements\control('product_param', __('Product Name', 'vxn-express'), [
+                'type' => 'text',
+                'layout' => 'vertical',
+                'textOptions' => ['multiline' => true],
+                'condition' => [
+                    'path' => '%%CURRENTPATH%%.whatsapp_text',
+                    'operand' => 'is one of',
+                    'value' => ['Order', 'Konsul Produk']
+                ]
+            ])
         ];        
     }
 
@@ -91,6 +91,9 @@ class Whatsapp_Url extends StringField
             $text = $attributes['custom_text'] ?? '';
         }elseif($text === 'Order'){
             $shortcode = sprintf('[vxn-wa-text-order product="%s"]', $attributes['product_param'] ?? '');
+            $text = do_shortcode($shortcode);
+        }elseif($text === 'Konsul Produk'){
+            $shortcode = sprintf('[vxn-wa-text-consult-product product="%s"]', $attributes['product_param'] ?? '');
             $text = do_shortcode($shortcode);
         }else{
             $text = do_shortcode($text);

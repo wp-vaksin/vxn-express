@@ -12,7 +12,7 @@ class Contact_Instagram_Url extends StringField
      */
     public function label()
     {
-        return 'Contact Instagram URL';
+        return __('Instagram URL', 'vxn-express');
     }
 
     /**
@@ -20,7 +20,7 @@ class Contact_Instagram_Url extends StringField
      */
     public function category()
     {
-        return 'Express Contact';
+        return __('Express Contact', 'vxn-express');
     }
 
     /**
@@ -38,6 +38,6 @@ class Contact_Instagram_Url extends StringField
 
     public function handler($attributes): StringData
     {
-        return StringData::fromString(Options::get('contact')['txt-instagram'] ?? '');        
+        return StringData::fromString(do_shortcode('[vxn-instagram-url]'));        
     }
 }

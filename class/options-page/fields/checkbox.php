@@ -37,8 +37,17 @@ class Checkbox extends Field {
     protected function render(): void {
         $checked = $this->value ? 'checked="checked"' : '';
 
-        echo <<<EOT
-            <label for="$this->id"><input type="checkbox" id="$this->id" name="$this->name" value="1" $checked />$this->text_right</label>
-        EOT;
+        printf(
+            '<label for="%s">
+                <input type="checkbox" id="%s" name="%s" value="1" %s />
+                %s
+            </label>',
+            esc_attr($this->id),
+            esc_attr($this->id),
+            esc_attr($this->name),
+            esc_html($checked),
+            esc_textarea($this->text_right)
+        ); 
+
     }
 }

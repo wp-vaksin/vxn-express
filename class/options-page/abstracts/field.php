@@ -87,7 +87,7 @@ abstract class Field extends Array_Access {
         $this->render();
 
         if($this->description){
-            echo '<p class="description">' . $this->description . '</p>';
+            echo '<p class="description">' . esc_textarea($this->description) . '</p>';
         }
     }
 

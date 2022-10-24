@@ -11,7 +11,7 @@ class Contact_Phone extends StringField
      */
     public function label()
     {
-        return 'Contact Phone';
+        return __('Phone', 'vxn-express');
     }
 
     /**
@@ -19,7 +19,7 @@ class Contact_Phone extends StringField
      */
     public function category()
     {
-        return 'Express Contact';
+        return __('Express Contact', 'vxn-express');
     }
 
     /**
@@ -37,7 +37,6 @@ class Contact_Phone extends StringField
 
     public function handler($attributes): StringData
     {
-        $phone = do_shortcode( '[vxn-contact-phone-display]' );
-        return StringData::fromString($phone);        
+        return StringData::fromString(do_shortcode( '[vxn-contact-phone-display]' ));        
     }
 }

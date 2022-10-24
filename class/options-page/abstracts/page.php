@@ -38,16 +38,6 @@ class Page extends Array_Access  {
     /** @var array $options array of options related this page. get the values from get_options(). */
     protected $options = [];
 
-    protected $format_content =<<< EOT
-        <div class="wrap">
-            <h1>[title]</h1>
-            [description]
-            [nav_tabs]
-            <form method="post" action="options.php">
-                [form_content]
-            </form>
-        </div>
-    EOT;
     
     /**
      * @param string $menu_slug 
@@ -86,39 +76,43 @@ class Page extends Array_Access  {
         add_action( 'admin_init', array( $this, 'admin_init_callback' ) );  
     }    
     
-    /** @return string  */
-    public function get_nav_tabs_html(){
-
-        $html = '<nav class="nav-tab-wrapper">';
-        foreach($this->arr_tabs as $tab) {
-            $href = $tab['slug'];
-            $active_class = $tab['slug'] == $this->menu_slug ? 'nav-tab-active' : '';
-            $title = $tab['title'];
-
-            $html .= <<<EOT
-                <a href="?page=$href" class="nav-tab $active_class">$title </a>
-            EOT;
-        }
-        $html .=  '</nav>';     
-
-        return $html;
-    }
 
     /** @return void  */
     public function content_callback() {
-        $nav_tabs_html = $this->arr_tabs ? $this->get_nav_tabs_html() : '';
 
-        $content = $this->format_content;
-        $content = str_replace('[title]', $this->title, $content);
-        $content = str_replace('[description]', $this->description ? '<p>'. $this->description . '</p>' : '', $content);
-        $content = str_replace('[nav_tabs]', $nav_tabs_html, $content);
+        // open div
+        echo '<div class="wrap">';
+        
+        //title
+        echo '<h1>' . esc_html($this->title) . '</h1>';
 
-        $ar_content = explode('[form_content]', $content);
-        echo $ar_content[0];
+        //description 
+        echo $this->description ? '<p>'. sanitize_text_field($this->description) . '</p>' : '';
+
+        // start nav tabs
+        echo '<nav class="nav-tab-wrapper">';
+        foreach($this->arr_tabs as $tab) {
+            $active_class = $tab['slug'] == $this->menu_slug ? 'nav-tab-active' : '';
+            printf(
+                '<a href="%s" class="nav-tab %s">%s</a>',
+                esc_url('?page=' . $tab['slug']),
+                esc_html($active_class),
+                esc_html($tab['title'])
+            ); 
+        }
+        echo '</nav>';
+        // end nav tabs
+
+        // start options form
+        echo '<form method="post" action="options.php">';
             settings_fields( $this->option_group );
             do_settings_sections( $this->slug );
-            submit_button();
-        echo $ar_content[1];     
+            submit_button();        
+        echo '</form>';
+        // end options form
+
+        //close div
+        echo '</div>';
     }
     
     /** @return void  */

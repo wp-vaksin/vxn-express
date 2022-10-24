@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2022-10-20 12:08+0700\n"
-"PO-Revision-Date: 2022-10-20 12:09+0700\n"
+"POT-Creation-Date: 2022-10-24 15:19+0700\n"
+"PO-Revision-Date: 2022-10-24 15:29+0700\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: id_ID\n"
@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 3.1.1\n"
+"X-Generator: Poedit 3.2\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-KeywordsList: __\n"
 "X-Poedit-SearchPath-0: .\n"
@@ -24,6 +24,7 @@ msgid "Contact Detail"
 msgstr "Detail Kontak"
 
 #: class/admin/pages/contact-page.php:37
+#: class/breakdance/dynamic-data/fields/contact/contact-phone.php:14
 msgid "Phone"
 msgstr "No. Telp"
 
@@ -32,12 +33,14 @@ msgid "Fill in with the complete telephone number e.g. +6281220003131"
 msgstr "Isi dengan nomor telepon lengkap, misalnya +6281220003131"
 
 #: class/admin/pages/contact-page.php:40
+#: class/breakdance/dynamic-data/fields/contact/contact-email.php:15
 msgid "Email"
 msgstr "Email"
 
 #: class/admin/pages/contact-page.php:42
-msgid "Location"
-msgstr "Lokasi"
+#: class/breakdance/dynamic-data/fields/contact/contact-address.php:15
+msgid "Address"
+msgstr "Alamat"
 
 #: class/admin/pages/contact-page.php:44
 msgid "Google Business Profile Name"
@@ -48,24 +51,29 @@ msgid "Social Media"
 msgstr "Media Sosial"
 
 #: class/admin/pages/contact-page.php:53
+#: class/breakdance/dynamic-data/fields/contact/contact-facebook-url.php:15
 msgid "Facebook URL"
-msgstr "Facebook URL"
+msgstr "Link Facebook"
 
 #: class/admin/pages/contact-page.php:55
+#: class/breakdance/dynamic-data/fields/contact/contact-instagram-url.php:15
 msgid "Instagram URL"
-msgstr "Instagram URL"
+msgstr "Link Instagram"
 
 #: class/admin/pages/contact-page.php:57
+#: class/breakdance/dynamic-data/fields/contact/contact-twitter-url.php:15
 msgid "Twitter URL"
-msgstr "Twitter URL"
+msgstr "Link Twitter"
 
 #: class/admin/pages/contact-page.php:59
+#: class/breakdance/dynamic-data/fields/contact/contact-youtube-url.php:15
 msgid "Youtube URL"
-msgstr "Youtube URL"
+msgstr "Link Youtube"
 
 #: class/admin/pages/contact-page.php:61
+#: class/breakdance/dynamic-data/fields/contact/contact-linkedin-url.php:15
 msgid "LinkedIn URL"
-msgstr "LinkedIn URL"
+msgstr "Link LinkedIn"
 
 #: class/admin/pages/setup-page.php:33
 msgid "Phone Display Format"
@@ -104,27 +112,75 @@ msgid "Text Template"
 msgstr "Template Teks"
 
 #: class/admin/pages/whatsapp-page.php:53
+#: class/breakdance/dynamic-data/fields/whatsapp/whatsapp-url.php:51
 msgid "Default Text"
 msgstr "Teks Default"
 
 #: class/admin/pages/whatsapp-page.php:57
+#: class/breakdance/dynamic-data/fields/whatsapp/whatsapp-url.php:52
 msgid "Order Text"
 msgstr "Teks Order"
 
 #: class/admin/pages/whatsapp-page.php:61
+#: class/breakdance/dynamic-data/fields/whatsapp/whatsapp-url.php:53
 msgid "Consult Text"
 msgstr "Teks Konsultasi"
 
 #: class/admin/pages/whatsapp-page.php:65
+#: class/breakdance/dynamic-data/fields/whatsapp/whatsapp-url.php:54
 msgid "Product Consult Text"
 msgstr "Teks Konsultasi Produk"
 
 #: class/admin/pages/whatsapp-page.php:69
+#: class/breakdance/dynamic-data/fields/whatsapp/whatsapp-url.php:55
 msgid "Appointment Text"
 msgstr "Teks Janji Temu"
 
-#~ msgid "Address"
-#~ msgstr "Alamat"
+#: class/breakdance/dynamic-data/fields/contact/contact-address-map.php:15
+msgid "Google Map URL"
+msgstr "Link Google Map"
+
+#: class/breakdance/dynamic-data/fields/contact/contact-address-map.php:23
+#: class/breakdance/dynamic-data/fields/contact/contact-address.php:23
+#: class/breakdance/dynamic-data/fields/contact/contact-email-url.php:23
+#: class/breakdance/dynamic-data/fields/contact/contact-email.php:23
+#: class/breakdance/dynamic-data/fields/contact/contact-facebook-url.php:23
+#: class/breakdance/dynamic-data/fields/contact/contact-instagram-url.php:23
+#: class/breakdance/dynamic-data/fields/contact/contact-linkedin-url.php:23
+#: class/breakdance/dynamic-data/fields/contact/contact-phone-url.php:23
+#: class/breakdance/dynamic-data/fields/contact/contact-phone.php:22
+#: class/breakdance/dynamic-data/fields/contact/contact-twitter-url.php:23
+#: class/breakdance/dynamic-data/fields/contact/contact-youtube-url.php:23
+msgid "Express Contact"
+msgstr "Express Kontak"
+
+#: class/breakdance/dynamic-data/fields/contact/contact-email-url.php:15
+msgid "Email URL"
+msgstr "Link Email"
+
+#: class/breakdance/dynamic-data/fields/contact/contact-phone-url.php:15
+msgid "Phone URL"
+msgstr "Link No. Telp"
+
+#: class/breakdance/dynamic-data/fields/whatsapp/show-whatsapp-form.php:15
+msgid "Is Show WhatsApp Popup"
+msgstr "Tampilkan Popup WhatsApp"
+
+#: class/breakdance/dynamic-data/fields/whatsapp/show-whatsapp-form.php:23
+#: class/breakdance/dynamic-data/fields/whatsapp/whatsapp-url.php:22
+msgid "Express WhatsApp"
+msgstr "Express WhatsApp"
+
+#: class/breakdance/dynamic-data/fields/whatsapp/whatsapp-url.php:14
+msgid "WhatsApp URL"
+msgstr "Link WhatsApp"
+
+#: class/breakdance/dynamic-data/fields/whatsapp/whatsapp-url.php:69
+msgid "Product Name"
+msgstr "Nama Produk"
+
+#~ msgid "Location"
+#~ msgstr "Lokasi"
 
 #~ msgid "To display your map based on place and location"
 #~ msgstr "Untuk menampilkan peta Anda berdasarkan tempat dan lokasi"

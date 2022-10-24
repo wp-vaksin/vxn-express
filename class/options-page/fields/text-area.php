@@ -46,9 +46,14 @@ class Text_Area extends Field {
 
     /** {@inheritdoc} */
     protected function render(): void {
-        echo <<<EOT
-            <textarea rows="$this->rows" cols="$this->cols" name="$this->name" id="$this->id" %s class="$this->id"/>$this->value</textarea>
-        EOT;
+        printf(
+            '<textarea rows="%s" cols="%s" name="%s" id="%s" />%s</textarea>',
+            esc_attr($this->rows),
+            esc_attr($this->cols),
+            esc_attr($this->name),
+            esc_attr($this->id),
+            esc_textarea($this->value)
+        );
 
     }
 }

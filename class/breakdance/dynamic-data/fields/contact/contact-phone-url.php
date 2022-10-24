@@ -12,7 +12,7 @@ class Contact_Phone_Url extends StringField
      */
     public function label()
     {
-        return 'Contact Phone URL';
+        return __('Phone URL', 'vxn-express');
     }
 
     /**
@@ -20,7 +20,7 @@ class Contact_Phone_Url extends StringField
      */
     public function category()
     {
-        return 'Express Contact';
+        return __('Express Contact', 'vxn-express');
     }
 
     /**
@@ -38,7 +38,6 @@ class Contact_Phone_Url extends StringField
 
     public function handler($attributes): StringData
     {
-        $phone = 'tel:' . Options::get('contact')['txt-phone'];
-        return StringData::fromString($phone);        
+        return StringData::fromString(do_shortcode('[vxn-contact-phone-url]'));        
     }
 }

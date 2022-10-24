@@ -13,9 +13,9 @@ class Plugin{
 
     /** @return void  */
     public static function run() {
-		self::check_requirements();
-
 		load_plugin_textdomain( 'vxn-express', false, dirname( plugin_basename(VXN_EXPRESS_CORE_PLUGIN_FILE) ) . '/languages' ); 
+		
+		self::check_requirements();
 		
 		add_action('breakdance_loaded', function() {
 			Breakdance::register();
@@ -55,11 +55,10 @@ class Plugin{
 			$ok = true;			
 			if (! defined('__BREAKDANCE_PLUGIN_FILE__') ||  ! is_plugin_active(plugin_basename(__BREAKDANCE_PLUGIN_FILE__))){
 				add_action('admin_notices', function() {
-					echo <<< EOT
+					echo '
 						<div class="error">
 							<p>Express Add On deactivated!, this plugins requires <a href="https://s.id/breakdance">Breakdance</a> installed & activated.<p>
-						</div>
-					EOT;
+						</div>';					
 				});
 				$ok = false;
 			}

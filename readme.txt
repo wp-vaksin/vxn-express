@@ -18,17 +18,28 @@ Express setup for contact and WhatsApp text template for Breakdance website buil
 = Key Features =
 
 * The data you input in the options page can be used via Breakdance dynamic data
-* The data also can used by shortcodes:
-[vxn-wa-url] 
+* The data also can be used by shortcodes:
+[format-idr]
 [vxn-contact-phone]
+[vxn-contact-phone-url]
 [vxn-contact-phone-display]
-[vxn-contact-emai]
+[vxn-contact-email]
+[vxn-contact-email-url]
 [vxn-contact-address]
+[vxn-google-map-url]
+[vxn-facebook-url]
+[vxn-instagram-url]
+[vxn-twitter-url]
+[vxn-youtube-url]
+[vxn-linkedin-url]
+[vxn-wa-url]
+[vxn-wa-is-popup]
 [vxn-wa-text]
 [vxn-wa-text-order]
 [vxn-wa-text-consult]
 [vxn-wa-text-consult-product]
 [vxn-wa-text-appointment]
+
 
 == Installation ==
 
@@ -55,4 +66,4 @@ In the search field type “Express Add On” and click Search Plugins. You can 
 
 = 1.0.0 =
 
-* First stable version
+* Initial release

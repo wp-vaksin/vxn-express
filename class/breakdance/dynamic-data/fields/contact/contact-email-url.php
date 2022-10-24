@@ -12,7 +12,7 @@ class Contact_Email_Url extends StringField
      */
     public function label()
     {
-        return 'Contact Email URL';
+        return __('Email URL', 'vxn-express');
     }
 
     /**
@@ -20,7 +20,7 @@ class Contact_Email_Url extends StringField
      */
     public function category()
     {
-        return 'Express Contact';
+        return __('Express Contact', 'vxn-express');
     }
 
     /**
@@ -38,7 +38,6 @@ class Contact_Email_Url extends StringField
 
     public function handler($attributes): StringData
     {
-        $email_url = 'mailto:' . Options::get('contact')['txt-email'];
-        return StringData::fromString($email_url);        
+        return StringData::fromString(do_shortcode('[vxn-contact-email-url]'));        
     }
 }

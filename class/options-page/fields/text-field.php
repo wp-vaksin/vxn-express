@@ -46,11 +46,16 @@ class Text_field extends Field {
 
     /** {@inheritdoc} */
     protected function render(): void {
-        $placeholder = $this->placeholder ? 'placeholder="' . $this->placeholder . '"' : '';
-        $pattern = $this->pattern ? 'pattern="' . $this->pattern . '"' : '';
+        $placeholder = $this->placeholder ? 'placeholder="' . esc_attr($this->placeholder) . '"' : '';
+        $pattern = $this->pattern ? 'pattern="' . esc_attr($this->pattern) . '"' : '';        
 
-        echo <<<EOT
-            <input class="regular-text" type="text" name="$this->name" id="$this->id" value="$this->value" $placeholder $pattern>
-        EOT;
+        printf(
+            '<input class="regular-text" type="text" name="%s" id="%s" value="%s" %s %s>',
+            esc_attr($this->name),
+            esc_attr($this->id),
+            esc_attr($this->value),
+            esc_html($placeholder),
+            esc_html($pattern)
+        );
     }    
 }

@@ -12,7 +12,7 @@ class Contact_Address_Map extends StringField
      */
     public function label()
     {
-        return 'Contact Address Map';
+        return __('Google Map URL', 'vxn-express');
     }
 
     /**
@@ -20,7 +20,7 @@ class Contact_Address_Map extends StringField
      */
     public function category()
     {
-        return 'Express Contact';
+        return __('Express Contact', 'vxn-express');
     }
 
     /**
@@ -38,7 +38,6 @@ class Contact_Address_Map extends StringField
 
     public function handler($attributes): StringData
     {
-        $url = 'https://www.google.com/maps/search/?api=1&query='. urlencode(Options::get('contact')['txt-place']);
-        return StringData::fromString($url); 
+        return StringData::fromString(do_shortcode('[vxn-google-map-url]')); 
     }
 }

@@ -34,10 +34,16 @@ class Email_Field extends Field {
     
     /** {@inheritdoc} */
     protected function render(): void {
-        $placeholder = $this->placeholder ? 'placeholder="' . $this->placeholder . '"' : '';
+        $placeholder = $this->placeholder ? 'placeholder="' . esc_attr($this->placeholder) . '"' : '';
 
-        echo <<<EOT
-            <input class="regular-text" type="email" name="$this->name" id="$this->id" value="$this->value" $placeholder>
-        EOT;
+        printf(
+            '<input class="regular-text" type="email" name="%s" id="%s" value="%s" %s>',
+            esc_attr($this->name),
+            esc_attr($this->id),
+            esc_attr($this->value),
+            esc_html($placeholder)
+        );
+            
+        
     }
 }

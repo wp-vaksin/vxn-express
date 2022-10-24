@@ -12,7 +12,7 @@ class Contact_linkedin_Url extends StringField
      */
     public function label()
     {
-        return 'Contact LinkedIn URL';
+        return __('LinkedIn URL', 'vxn-express');
     }
 
     /**
@@ -20,7 +20,7 @@ class Contact_linkedin_Url extends StringField
      */
     public function category()
     {
-        return 'Express Contact';
+        return __('Express Contact', 'vxn-express');
     }
 
     /**
@@ -38,6 +38,6 @@ class Contact_linkedin_Url extends StringField
 
     public function handler($attributes): StringData
     {
-        return StringData::fromString(Options::get('contact')['txt-linkedin'] ?? '');        
+        return StringData::fromString(do_shortcode('[vxn-linkedin-url]'));        
     }
 }

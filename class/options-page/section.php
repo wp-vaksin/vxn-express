@@ -79,6 +79,6 @@ class Section extends Array_Access  {
 
     /** @return void  */
     public function section_info_callback(): void {
-        echo $this->info ? : '';
+        echo  $this->info ? esc_textarea($this->info) : '';
     }
 }

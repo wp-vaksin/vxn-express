@@ -12,7 +12,7 @@ class Show_Whatsapp_Form extends StringField
      */
     public function label()
     {
-        return 'Is Show WhatsApp Form';
+        return __('Is Show WhatsApp Popup', 'vxn-express');
     }
 
     /**
@@ -20,7 +20,7 @@ class Show_Whatsapp_Form extends StringField
      */
     public function category()
     {
-        return 'Express WhatsApp';
+        return __('Express WhatsApp', 'vxn-express');
     }
 
     /**
@@ -38,6 +38,6 @@ class Show_Whatsapp_Form extends StringField
 
     public function handler($attributes): StringData
     {
-        return StringData::fromString(Options::get('whatsapp')['chk-show-form']);        
+        return StringData::fromString(do_shortcode('[vxn-wa-is-popup]'));        
     }
 }

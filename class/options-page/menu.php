@@ -94,22 +94,4 @@ class Menu extends Array_Access  {
         return $this;
     }    
 
-    /** @return void  */
-    public function get_nav_tabs_html(){
-        $nav_tabs = [];
-
-        foreach($this->sub_menus as $sub_menu){
-            $nav_tabs[] = ['slug'=> $sub_menu['slug'], 'title'=>$sub_menu['page']['title']];
-        }
-  
-        echo '<nav class="nav-tab-wrapper">';
-        foreach($nav_tabs as $tab) {
-            printf('<a href="?page=%s" class="nav-tab %s">%s</a>', 
-                $tab['slug'], 
-                $tab['slug'] == $this->slug ? 'nav-tab-active' : '',
-                $tab['title']
-            );
-        }
-        echo '</nav>';          
-    }
 }
