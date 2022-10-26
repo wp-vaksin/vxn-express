@@ -5,7 +5,7 @@ namespace VXN\Express\Core\Options_page\Abstracts;
  * Abstract class for implement ArrayAccess 
  * @package VXN\Express\Core\Options_page\Abstracts
  * @author Vaksin <dev@vaks.in>
- * @version 1.0.0
+ * @since 1.0.0
  */
 abstract class Array_Access implements \ArrayAccess  {
     

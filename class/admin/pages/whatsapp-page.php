@@ -11,7 +11,7 @@ use VXN\Express\Core\Options_page\Section;
  * WhatsApp Admin Page
  * @package VXN\Express\Core\Admin\Pages
  * @author Vaksin <dev@vaks.in>
- * @version 1.0.0
+ * @since 1.0.0
  */ 
 class Whatsapp_Page extends Page {
 

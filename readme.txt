@@ -62,6 +62,13 @@ In the search field type “Express Add On” and click Search Plugins. You can 
 1. Upload the plugin zip file, the plugin will now be installed
 1. After the installation has finished, click the ‘activate plugin’ link
 
+== Screenshots ==
+1. Express Options: Setup
+2. Express Options: Contact
+3. Express Options: WhatsApp
+4. Breakdance dynamic data string type
+5. Breakdance dynamic data URL type
+
 == Changelog ==
 
 = 1.0.0 =

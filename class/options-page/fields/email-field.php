@@ -7,7 +7,7 @@ use VXN\Express\Core\Options_page\Abstracts\Field;
  * Email input field for option page 
  * @package VXN\Express\Core\Options_page\Fields
  * @author Vaksin <dev@vaks.in>
- * @version 1.0.0
+ * @since 1.0.0
  */
 class Email_Field extends Field {
 

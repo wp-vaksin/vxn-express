@@ -5,7 +5,7 @@ namespace VXN\Express\Core;
  * Class of utility static functions
  * @package VXN\Express\Core 
  * @author Vaksin <dev@vaks.in>
- * @version 1.0.0
+ * @since 1.0.0
  */
 class Util {    
 

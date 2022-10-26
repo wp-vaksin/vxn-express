@@ -8,7 +8,7 @@ use VXN\Express\Core\Options_page\Abstracts\Field;
  * WordPress Page Section Class 
  * @package VXN\Express\Core\Options_page
  * @author Vaksin <dev@vaks.in>
- * @version 1.0.0
+ * @since 1.0.0
  */
 class Section extends Array_Access  {
 

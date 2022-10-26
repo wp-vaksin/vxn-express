@@ -5,7 +5,7 @@ namespace VXN\Express\Core;
  * Asset Enqueue 
  * @package VXN\Express\Core 
  * @author Vaksin <dev@vaks.in>
- * @version 1.0.0
+ * @since 1.0.0
  */
 class Assets {
     private static $version = '0.0.1';

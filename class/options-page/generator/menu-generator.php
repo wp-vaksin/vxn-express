@@ -7,7 +7,7 @@ use VXN\Express\Core\Options_page\Menu;
  * WordPress Admin Menu Generator Class 
  * @package VXN\Express\Core\Options_page\Generator 
  * @author Vaksin <dev@vaks.in>
- * @version 1.0.0
+ * @since 1.0.0
  */
 class Menu_Generator  {
 

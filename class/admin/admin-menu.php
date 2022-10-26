@@ -11,13 +11,14 @@ use VXN\Express\Core\Options_page\Menu;
  * Admin menu setup class 
  * @package VXN\Express\Core\Admin 
  * @author Vaksin <dev@vaks.in>
- * @version 1.0.0
+ * @since 1.0.0
  */
 class Admin_menu{
     /** @return void  */
     public static function add() {  
         $menu = new Menu('vxn-express-setup');
         $menu->set_title('Express Options')
+            ->set_icon('dashicons-clipboard')
             ->set_position(2)
             ->set_page(new Setup_Page());
 

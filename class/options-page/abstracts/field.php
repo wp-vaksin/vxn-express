@@ -5,7 +5,7 @@ namespace VXN\Express\Core\Options_page\Abstracts;
  * Abstract class for option field 
  * @package VXN\Express\Core\Options_page\Abstracts
  * @author Vaksin <dev@vaks.in>
- * @version 1.0.0
+ * @since 1.0.0
  */
 abstract class Field extends Array_Access {
     

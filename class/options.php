@@ -5,7 +5,7 @@ namespace VXN\Express\Core;
  * Options, to set and get options for express add on  
  * @package VXN\Express\Core 
  * @author Vaksin <dev@vaks.in>
- * @version 1.0.0
+ * @since 1.0.0
  */
 class Options {
 

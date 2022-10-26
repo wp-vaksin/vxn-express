@@ -7,7 +7,7 @@ use VXN\Express\Core\Options_page\Section;
  * Abstract class for option page 
  * @package VXN\Express\Core\Options_page\Abstracts
  * @author Vaksin <dev@vaks.in>
- * @version 1.0.0
+ * @since 1.0.0
  */
 class Page extends Array_Access  {
     
@@ -136,9 +136,12 @@ class Page extends Array_Access  {
             );
             
             foreach ( $section['fields'] as $field ) {                
-                $field['name'] = $this->option_name . '[' . $field['id'] . ']';                
-                $field['value'] = $this->options[$field['id']];
+                $field['name'] = $this->option_name . '[' . $field['id'] . ']';
 
+                if(isset($this->options[$field['id']])){
+                    $field['value'] = $this->options[$field['id']];
+                }
+                
                 add_settings_field(
                     $field['id'], // id
                     $field['title'], // title

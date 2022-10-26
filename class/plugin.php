@@ -7,7 +7,7 @@ use VXN\Express\Core\Admin\Admin_menu;
  * Class to run express add on plugin
  * @package VXN\Express\Core 
  * @author Vaksin <dev@vaks.in>
- * @version 1.0.0
+ * @since 1.0.0
  */
 class Plugin{
 
