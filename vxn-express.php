@@ -3,7 +3,7 @@
  * Plugin Name:       Express Add On
  * Plugin URI: 		  https://github.com/wp-vaksin/vxn-express
  * Description:       Express setup for contact and WhatsApp text template for Breakdance website builder 
- * Version:           1.0.0
+ * Version:           1.0.1
  * Requires at least: 5.2
  * Requires PHP:      7.4
  * Author:            Vaksin
