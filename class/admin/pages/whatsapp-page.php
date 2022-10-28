@@ -5,7 +5,7 @@ use VXN\Express\Core\Options_page\Abstracts\Page;
 use VXN\Express\Core\Options_page\Fields\Checkbox;
 use VXN\Express\Core\Options_page\Fields\Phone_Field;
 use VXN\Express\Core\Options_page\Fields\Text_Area;
-use VXN\Express\Core\Options_page\Section;
+use VXN\Express\Core\Options_page\Option_Section;
 
 /**
  * WhatsApp Admin Page
@@ -18,16 +18,16 @@ class Whatsapp_Page extends Page {
     /** @return void  */
     public function __construct()
     {        
-        $this->title = 'WhatsApp';
+        $this->title = __('WhatsApp', 'vxn-express');
 
         $this
             ->add_section($this->settings_section())
             ->add_section($this->template_section());        
     }
     
-    /** @return Section  */
+    /** @return Option_Section  */
     protected function settings_section() {
-        return (new Section('settings'))
+        return (new Option_Section('settings'))
             ->set_title(__('WhatsApp Setting', 'vxn-express'))
             ->add_hr_bottom()
             ->add_field(
@@ -43,9 +43,9 @@ class Whatsapp_Page extends Page {
             );        
     }
 
-    /** @return Section  */
+    /** @return Option_Section  */
     protected function template_section() {
-        return (new Section('template'))
+        return (new Option_Section('template'))
             ->set_title(__('Text Template', 'vxn-express'))
             ->add_hr_bottom()       
             ->add_field(

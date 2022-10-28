@@ -37,8 +37,8 @@ class Shortcodes {
 			} );		
 		}
 
-		if ( ! shortcode_exists( 'vxn-contact-phone-display' ) ){
-			add_shortcode( 'vxn-contact-phone-display', function() {
+		if ( ! shortcode_exists( 'vxn-contact-phone-formatted' ) ){
+			add_shortcode( 'vxn-contact-phone-formatted', function() {
 				$phone = Options::get('contact')['txt-phone'];
 				$format = Options::get('setup')['txt-phone-format'];
 				return esc_html(Util::format_phone($phone, $format));

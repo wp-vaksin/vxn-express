@@ -1,7 +1,7 @@
 <?php
 namespace VXN\Express\Core\Options_page\Fields;
 
-use VXN\Express\Core\Options_page\Abstracts\Field;
+use VXN\Express\Core\Options_page\Abstracts\Option_Field;
 
 /**
  * Textarea input field for option page 
@@ -9,7 +9,7 @@ use VXN\Express\Core\Options_page\Abstracts\Field;
  * @author Vaksin <dev@vaks.in>
  * @since 1.0.0
  */
-class Text_Area extends Field {
+class Text_Area extends Option_Field {
 
     /** @var int $rows Display rows of textare. */
     protected $rows = 7;

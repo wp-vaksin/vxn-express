@@ -1,5 +1,5 @@
 <?php
-namespace VXN\Express\Core\Breakdance\Dynamic_Data\Fields\Whatsapp;
+namespace VXN\Express\Core\Breakdance\Dynamic_Data\Fields;
 
 use Breakdance\DynamicData\StringData;
 use Breakdance\DynamicData\StringField;
@@ -19,7 +19,7 @@ class Whatsapp_Url extends StringField
      */
     public function category()
     {
-        return __('Express WhatsApp', 'vxn-express');
+        return __('Express Options', 'vxn-express');
     }
 
     /**
@@ -35,7 +35,7 @@ class Whatsapp_Url extends StringField
      */    
     public function returnTypes()
     {
-        return ['url', 'string'];
+        return ['url'];
     }
 
     /**

@@ -1,7 +1,7 @@
 <?php
 namespace VXN\Express\Core\Options_page\Fields;
 
-use VXN\Express\Core\Options_page\Abstracts\Field;
+use VXN\Express\Core\Options_page\Abstracts\Option_Field;
 
 /**
  * Text input field for option page 
@@ -9,7 +9,7 @@ use VXN\Express\Core\Options_page\Abstracts\Field;
  * @author Vaksin <dev@vaks.in>
  * @since 1.0.0
  */
-class Text_field extends Field {
+class Text_field extends Option_Field {
     
     /** @var string $placeholder Text that will be shown inside of input. */
     protected $placeholder;

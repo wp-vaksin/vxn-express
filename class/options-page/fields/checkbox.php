@@ -1,7 +1,7 @@
 <?php
 namespace VXN\Express\Core\Options_page\Fields;
 
-use VXN\Express\Core\Options_page\Abstracts\Field;
+use VXN\Express\Core\Options_page\Abstracts\Option_Field;
 
 /**
  * Checkbox input field for option page 
@@ -9,7 +9,7 @@ use VXN\Express\Core\Options_page\Abstracts\Field;
  * @author Vaksin <dev@vaks.in>
  * @since 1.0.0
  */
-class Checkbox extends Field {
+class Checkbox extends Option_Field {
 
     /** @var string $text_right Text that will be shown at the rigth of checkbox. */
     protected $text_right;

@@ -1,7 +1,7 @@
 <?php
 namespace VXN\Express\Core\Options_page;
 
-use VXN\Express\Core\Options_page\Abstracts\Array_Access;
+use VXN\Express\Core\Abstracts\Array_Access;
 use VXN\Express\Core\Options_page\Abstracts\Page;
 
 /**

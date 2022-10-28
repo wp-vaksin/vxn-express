@@ -1,11 +1,11 @@
 <?php
-namespace VXN\Express\Core\Options_page\Abstracts;
+namespace VXN\Express\Core\Abstracts;
 
 /**
  * Abstract class for option field 
- * @package VXN\Express\Core\Options_page\Abstracts
+ * @package VXN\Express\Core\Abstracts
  * @author Vaksin <dev@vaks.in>
- * @since 1.0.0
+ * @since 1.0.1
  */
 abstract class Field extends Array_Access {
     
@@ -23,6 +23,9 @@ abstract class Field extends Array_Access {
 
     /** @var string $value Field value, will be shown inside of input. */
     protected $value;
+
+    /** @var string $default Default value, will be shown inside of input if $value is empty string. */
+    protected $default;    
 
     /** @var string $description Field description, will be shown in the below of input. */
     protected $description;
@@ -65,6 +68,15 @@ abstract class Field extends Array_Access {
     }
 
     /**
+     * @param string $value 
+     * @return $this 
+     */
+    public function set_default_value($value) {
+        $this->default = $value;
+        return $this;
+    }    
+
+    /**
      * @param string $description 
      * @return $this 
      */
@@ -81,16 +93,4 @@ abstract class Field extends Array_Access {
         $this->class = $class;
         return $this;
     }
-
-    /** @return void  */
-    public function render_callback (): void {
-        $this->render();
-
-        if($this->description){
-            echo '<p class="description">' . esc_textarea($this->description) . '</p>';
-        }
-    }
-
-    /** @return void  */
-    abstract protected function render(): void;
 }

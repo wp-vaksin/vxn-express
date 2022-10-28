@@ -6,7 +6,7 @@ use VXN\Express\Core\Options_page\Fields\Email_Field;
 use VXN\Express\Core\Options_page\Fields\Phone_Field;
 use VXN\Express\Core\Options_page\Fields\Text_Area;
 use VXN\Express\Core\Options_page\Fields\Text_field;
-use VXN\Express\Core\Options_page\Section;
+use VXN\Express\Core\Options_page\Option_Section;
 
 /**
  * Contact Admin Page
@@ -19,18 +19,16 @@ class Contact_Page extends Page {
     /** @return void  */
     public function __construct()
     {        
-        $this->title = 'Contact';
-        // $this->description = 'no description';
+        $this->title = __('Contact', 'vxn-express');
 
         $this
             ->add_section($this->contact_detail_section())
-            // ->add_section($this->adress_section())
             ->add_section($this->sosmed_section());
     }
     
-    /** @return Section  */
+    /** @return Option_Section  */
     private function contact_detail_section(){
-        return (new Section('contact'))
+        return (new Option_Section('contact'))
             ->set_title(__('Contact Detail', 'vxn-express'))
             ->add_hr_bottom()
             ->add_field((new Phone_Field('txt-phone'))            
@@ -45,9 +43,9 @@ class Contact_Page extends Page {
 
     }
 
-    /** @return Section  */
+    /** @return Option_Section  */
     private function sosmed_section(){
-        return (new Section('sosmed'))
+        return (new Option_Section('sosmed'))
             ->set_title(__('Social Media', 'vxn-express'))
             ->add_field((new Text_Field('txt-facebook'))            
                 ->set_title(__('Facebook URL', 'vxn-express')))

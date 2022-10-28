@@ -16,17 +16,6 @@ spl_autoload_register(function($class) {
 	$class = str_replace("\\", DIRECTORY_SEPARATOR, $class);
 	$class = str_replace("_", '-', $class);
 	$class = strtolower($class);
-
-
-	// $class  = str_replace($prefix, DIRECTORY_SEPARATOR . 'class'. DIRECTORY_SEPARATOR, $class);    
-	// $class = str_replace("\\", DIRECTORY_SEPARATOR, $class);
-	// $class = str_replace("_", '-', $class);
-	// $class = strtolower($class);
-
-	// $class = str_replace("VXN\Express\Core", 'class', $class);
-	// $class = str_replace("\\", DIRECTORY_SEPARATOR, $class);
-	// $class = str_replace("_", '-', $class);
-	// $class = strtolower($class);
 	
 	require_once VXN_EXPRESS_CORE_PATH . $class . '.php';
 

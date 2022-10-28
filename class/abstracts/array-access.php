@@ -1,11 +1,11 @@
 <?php
-namespace VXN\Express\Core\Options_page\Abstracts;
+namespace VXN\Express\Core\Abstracts;
 
 /**
  * Abstract class for implement ArrayAccess 
- * @package VXN\Express\Core\Options_page\Abstracts
+ * @package VXN\Express\Core\Abstracts
  * @author Vaksin <dev@vaks.in>
- * @since 1.0.0
+ * @since 1.0.1
  */
 abstract class Array_Access implements \ArrayAccess  {
     

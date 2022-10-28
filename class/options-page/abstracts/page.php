@@ -1,7 +1,8 @@
 <?php
 namespace VXN\Express\Core\Options_page\Abstracts;
 
-use VXN\Express\Core\Options_page\Section;
+use VXN\Express\Core\Abstracts\Array_Access;
+use VXN\Express\Core\Options_page\Option_Section;
 
 /**
  * Abstract class for option page 
@@ -63,10 +64,10 @@ class Page extends Array_Access  {
     }    
 
     /**
-     * @param Section $section 
+     * @param Option_Section $section 
      * @return $this 
      */
-    public function add_section(Section $section){
+    public function add_section(Option_Section $section){
         $this->sections[$section['id']] = $section;
         return $this;
     }

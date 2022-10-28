@@ -5,7 +5,7 @@ Donate link: https://www.buymeacoffee.com/vaksin?utm_source=express_add_on_plugi
 Requires at least: 5.2
 Tested up to: 6.0.3
 Requires PHP: 7.4
-Stable tag: 1.0.0
+Stable tag: 1.0.1
 License: GPL-2.0+
 License URI: http://www.gnu.org/licenses/gpl-2.0.txt
 
@@ -22,7 +22,7 @@ Express setup for contact and WhatsApp text template for Breakdance website buil
 [vxn-format-idr]
 [vxn-contact-phone]
 [vxn-contact-phone-url]
-[vxn-contact-phone-display]
+[vxn-contact-phone-formatted]
 [vxn-contact-email]
 [vxn-contact-email-url]
 [vxn-contact-address]
@@ -66,10 +66,17 @@ In the search field type “Express Add On” and click Search Plugins. You can 
 1. Express Options: Setup
 2. Express Options: Contact
 3. Express Options: WhatsApp
-4. Breakdance dynamic data string type
-5. Breakdance dynamic data URL type
+4. Express Options dynamic data
+5. Contact Informations
+6. Contact URLs
+7. WhatsApp URLs
 
 == Changelog ==
+
+= 1.0.1 =
+
+* Reorganize dynamic data
+* Script cleansing
 
 = 1.0.0 =
 

@@ -1,18 +1,18 @@
 <?php
-namespace VXN\Express\Core\Breakdance\Dynamic_Data\Fields\Contact;
+namespace VXN\Express\Core\Breakdance\Dynamic_Data\Fields;
 
 use Breakdance\DynamicData\StringData;
 use Breakdance\DynamicData\StringField;
 use VXN\Express\Core\Options;
 
-class Contact_Address extends StringField
+class Show_Whatsapp_Form extends StringField
 {
     /**
      * @inheritDoc
      */
     public function label()
     {
-        return __('Address', 'vxn-express');
+        return __('Is Show WhatsApp Popup', 'vxn-express');
     }
 
     /**
@@ -20,7 +20,7 @@ class Contact_Address extends StringField
      */
     public function category()
     {
-        return __('Express Contact', 'vxn-express');
+        return __('Express Options', 'vxn-express');
     }
 
     /**
@@ -28,7 +28,7 @@ class Contact_Address extends StringField
      */
     public function slug()
     {
-        return 'vxn-contact-address';
+        return 'vxn-show-whatsapp-form';
     }
 
     public function returnTypes()
@@ -38,6 +38,6 @@ class Contact_Address extends StringField
 
     public function handler($attributes): StringData
     {
-        return StringData::fromString(do_shortcode('[vxn-contact-address]'));        
+        return StringData::fromString(do_shortcode('[vxn-wa-is-popup]'));        
     }
 }

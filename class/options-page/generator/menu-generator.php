@@ -35,7 +35,6 @@ class Menu_Generator  {
         );
 
         if( $is_single_page ) {
-            // self::$menu['page']->set_arr_tabs($nav_tabs);
             self::$menu['page']->add_admin_init();
         }
 

@@ -58,4 +58,35 @@ class Util {
 
         return $result;
     }
+
+    /** @return string  */
+    public static function get_current_url(){
+        return (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+    }
+
+    /**
+     * @param mixed $var 
+     * @return void 
+     */
+    public static function print_debug($var){
+        echo "< !-- \n DEBUG: \n";
+        var_dump($var);
+        echo "\n --> ";
+    }
+
+    public static function get_logo_url(){
+        $logo_id = get_theme_mod('custom_logo');
+        return wp_get_attachment_image_url($logo_id, 'full') ?? '';
+    }
+
+    public static function remove_empty_array_deep(array $array){
+        foreach($array as $key => $value) {
+            if(empty($value)) {
+                unset($array[$key]);
+            }elseif(is_array($value)){
+                $array[$key] = self::remove_empty_array_deep($value);
+            }
+        }
+        return $array;
+    }
 }

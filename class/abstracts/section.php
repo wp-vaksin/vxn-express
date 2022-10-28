@@ -1,16 +1,16 @@
 <?php
-namespace VXN\Express\Core\Options_page;
+namespace VXN\Express\Core\Abstracts;
 
-use VXN\Express\Core\Options_page\Abstracts\Array_Access;
-use VXN\Express\Core\Options_page\Abstracts\Field;
+use VXN\Express\Core\Abstracts\Array_Access;
+use VXN\Express\Core\Abstracts\Field;
 
 /**
  * WordPress Page Section Class 
- * @package VXN\Express\Core\Options_page
+ * @package VXN\Express\Core\Abstracts
  * @author Vaksin <dev@vaks.in>
- * @since 1.0.0
+ * @since 1.0.1
  */
-class Section extends Array_Access  {
+abstract class Section extends Array_Access  {
 
     /** @var string $id The ID of the section */    
     protected $id;
@@ -75,10 +75,5 @@ class Section extends Array_Access  {
     public function add_hr_bottom() {
         $this->hr_bottom = true;
         return $this;
-    }
-
-    /** @return void  */
-    public function section_info_callback(): void {
-        echo  $this->info ? esc_textarea($this->info) : '';
     }
 }
