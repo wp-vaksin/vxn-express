@@ -29,8 +29,6 @@ class Plugin{
             Express::add_module(new Testi_Module());
             Express::add_module(new Team_Member_Module());
 
-            Express::add_menu_page(Setup_Page_Factory::create());
-            
 			Express::add_shortcode(
                 'vxn-format-idr',
                 function( $atts, $content ) {
@@ -38,6 +36,10 @@ class Plugin{
                     return esc_html('Rp. ' . number_format($content,0,",","."));
                 }
             );
-        });
+        },1);
+
+		add_action('vxn_express_load_modules', function() {
+            Express::add_menu_page(Setup_Page_Factory::create());
+        },999);        
     }
 }
