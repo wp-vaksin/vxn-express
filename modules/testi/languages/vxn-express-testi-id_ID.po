@@ -1,0 +1,67 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2022-11-10 22:15+0700\n"
+"PO-Revision-Date: 2022-11-10 22:16+0700\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: id_ID\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 3.2\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: __\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: testi-module.php:46 testi-module.php:48
+msgid "Testimonials"
+msgstr "Testimoni"
+
+#: testi-module.php:47
+msgid "Testimonial"
+msgstr "Testimoni"
+
+#: testi-module.php:51
+msgid "Enter Client Name Here"
+msgstr "Ketik Nama Klien di Sini"
+
+#: testi-module.php:56
+msgid "Testimonial Information"
+msgstr "Informasi Testimoni"
+
+#: testi-module.php:59
+msgid "Client Email"
+msgstr "Email Klien"
+
+#: testi-module.php:64
+msgid "Client Info"
+msgstr "Informasi Klien"
+
+#: testi-module.php:68
+msgid "Rating"
+msgstr "Rating"
+
+#: testi-module.php:75 testi-module.php:77
+msgid "Testimonial Categories"
+msgstr "Kategori Testimoni"
+
+#: testi-module.php:76
+msgid "Testimonial Category"
+msgstr "Kategori Testimoni"
+
+#~ msgid "Express Testimonials"
+#~ msgstr "Express Testimoni"
+
+#~ msgid "E-Mail Address"
+#~ msgstr "Alamat Email"
+
+#~ msgid "Position / Website / Other"
+#~ msgstr "Posisi"
+
+#~ msgid "Location"
+#~ msgstr "Lokasi"
+
+#~ msgid "Displays testimonials"
+#~ msgstr "Menampilkan Testimoni"

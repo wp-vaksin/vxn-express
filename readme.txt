@@ -1,52 +1,34 @@
 === Express Add On ===
 Contributors: vaksin
 Tags: Breakdance, WhatsApp
-Donate link: https://www.buymeacoffee.com/vaksin?utm_source=express_add_on_plugin_page&utm_medium=referral
+Donate link: https://paypal.me/akah
 Requires at least: 5.2
-Tested up to: 6.0.3
+Tested up to: 6.1
 Requires PHP: 7.4
-Stable tag: 1.0.1
+Stable tag: 1.1.2
 License: GPL-2.0+
 License URI: http://www.gnu.org/licenses/gpl-2.0.txt
 
-Express setup for contact and WhatsApp text template for Breakdance website builder 
+Express Add-on for Breakdance website builder, the time saver plugin!
 
 == Description ==
 
-Express setup for contact and WhatsApp text template for Breakdance website builder 
+Express Add-on for Breakdance website builder, the time saver plugin!
 
 = Key Features =
 
-* The data you input in the options page can be used via Breakdance dynamic data
-* The data also can be used by shortcodes:
-[vxn-format-idr]
-[vxn-contact-phone]
-[vxn-contact-phone-url]
-[vxn-contact-phone-formatted]
-[vxn-contact-email]
-[vxn-contact-email-url]
-[vxn-contact-address]
-[vxn-google-map-url]
-[vxn-facebook-url]
-[vxn-instagram-url]
-[vxn-twitter-url]
-[vxn-youtube-url]
-[vxn-linkedin-url]
-[vxn-wa-url]
-[vxn-wa-is-popup]
-[vxn-wa-text]
-[vxn-wa-text-order]
-[vxn-wa-text-consult]
-[vxn-wa-text-consult-product]
-[vxn-wa-text-appointment]
-
+* Use Breakdance dynamic data to get the data you input in the options page
+* The data also can be used by shortcodes.
+* WhatsApp Form using Breakdance Popup
+* Testimonials post type for Breakdance
+* Team Members post type for Breakdance
 
 == Installation ==
 
 = Minimum Requirements =
 
 * WordPress 5.2 or later
-* Breakdance 1.0.3 or later
+* Breakdance 1.1-beta or later
 
 = AUTOMATIC INSTALLATION =
 
@@ -66,12 +48,31 @@ In the search field type “Express Add On” and click Search Plugins. You can 
 1. Express Options: Setup
 2. Express Options: Contact
 3. Express Options: WhatsApp
-4. Express Options dynamic data
-5. Contact Informations
-6. Contact URLs
-7. WhatsApp URLs
+4. Express dynamic data
+5. WhatsApp URLs
+6. Testimonials Custom Post type
+7. Team Members Custom Post type
 
 == Changelog ==
+
+= 1.1.2 =
+
+* Fix wa-form.js for possibility of event listener DOMContentLoaded not firing
+
+= 1.1.1 =
+
+* Fix WhatsApp Form
+* Update Screenshots
+
+= 1.1.0 =
+
+* Add Testimonials and Team Members Module
+* Restructuring code
+
+= 1.0.2 =
+
+* Make the plugin modular (easy to extend the function in the future)
+* Compatibility with PHP 8.0 
 
 = 1.0.1 =
 

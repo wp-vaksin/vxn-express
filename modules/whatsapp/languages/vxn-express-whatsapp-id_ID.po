@@ -1,0 +1,91 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2022-11-10 22:16+0700\n"
+"PO-Revision-Date: 2022-11-10 22:16+0700\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: id_ID\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 3.2\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: __\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: admin/whatsapp-page.php:20
+msgid "WhatsApp"
+msgstr "WhatsApp"
+
+#: admin/whatsapp-page.php:38
+msgid "WhatsApp Setting"
+msgstr "Setting WhatsApp"
+
+#: admin/whatsapp-page.php:41
+msgid "WhatsApp Number"
+msgstr "No. WhatsApp"
+
+#: admin/whatsapp-page.php:42
+msgid "Fill in with the complete WhatsApp number e.g. 6281220003131"
+msgstr "Isi dengan nomor WhatsApp lengkap, misalnya 6281220003131"
+
+#: admin/whatsapp-page.php:46
+msgid "Show Form"
+msgstr "Tampilkan Form"
+
+#: admin/whatsapp-page.php:47
+msgid "Show Popup form before redirect to WhatsApp"
+msgstr "Tampilkan Form Popup sebelum dialihkan ke WhatsApp"
+
+#: admin/whatsapp-page.php:48
+msgid ""
+"You need to create Breakdance Popup to use this function, please read our "
+"documentation"
+msgstr ""
+"Untuk mengaktifkan fungsi ini Anda harus membuat Breakdance Popup, silakan "
+"baca dokumentasi kami"
+
+#: admin/whatsapp-page.php:56
+msgid "Text Template"
+msgstr "Template Teks"
+
+#: admin/whatsapp-page.php:59 breakdance/dynamic-fields/whatsapp-url.php:51
+msgid "Default Text"
+msgstr "Teks Default"
+
+#: admin/whatsapp-page.php:63 breakdance/dynamic-fields/whatsapp-url.php:52
+msgid "Order Text"
+msgstr "Teks Order"
+
+#: admin/whatsapp-page.php:67 breakdance/dynamic-fields/whatsapp-url.php:53
+msgid "Consult Text"
+msgstr "Teks Konsultasi"
+
+#: admin/whatsapp-page.php:71 breakdance/dynamic-fields/whatsapp-url.php:54
+msgid "Product Consult Text"
+msgstr "Teks Konsultasi Produk"
+
+#: admin/whatsapp-page.php:75 breakdance/dynamic-fields/whatsapp-url.php:55
+msgid "Appointment Text"
+msgstr "Teks Janji Temu"
+
+#: breakdance/dynamic-fields/whatsapp-url.php:14
+msgid "WhatsApp URL"
+msgstr "Link WhatsApp"
+
+#: breakdance/dynamic-fields/whatsapp-url.php:22
+msgid "Express Options"
+msgstr "Express Options"
+
+#: breakdance/dynamic-fields/whatsapp-url.php:69
+msgid "Product Name"
+msgstr "Nama Produk"
+
+#: breakdance/form-action/whatsapp-form-action.php:20
+msgid "Send WhatsApp"
+msgstr "Kirim WhatsApp"
+
+#~ msgid "Is Show WhatsApp Popup"
+#~ msgstr "Tampilkan Popup WhatsApp"

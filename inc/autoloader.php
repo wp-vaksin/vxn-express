@@ -5,18 +5,30 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 spl_autoload_register(function($class) {
+		
+	$get_path = function ($class, $config) {
+		foreach($config as $key=>$value){
+			if ( substr($class, 0, strlen($key))  === $key  ) {
+				$path = str_replace($key, $value . DIRECTORY_SEPARATOR, $class);
+				$path = str_replace("\\", DIRECTORY_SEPARATOR, $path);
+				$path = str_replace("_", '-', $path);
+				return strtolower($path);				
+			}
+		}
+		return false;
+	};
 	
-	$prefix = 'VXN\Express\Core\\';
+	$config = [
+		'VXN\Express\Addon\\' => 'app',		
+		'VXN\Express\Contact\\' => 'modules' . DIRECTORY_SEPARATOR . 'contact',
+		'VXN\Express\Whatsapp\\' => 'modules' . DIRECTORY_SEPARATOR . 'whatsapp',
+        'VXN\Express\Testi\\' => 'modules' . DIRECTORY_SEPARATOR . 'testi',
+        'VXN\Express\Team_Member\\' => 'modules' . DIRECTORY_SEPARATOR . 'team-member',
+	];
 
-	if ( substr($class,0,strlen($prefix))  !== $prefix  ) {
-		return;
+	$path = $get_path($class, $config);
+
+	if ( $path ) {
+		require_once VXN_EXPRESS_ADDON_PATH . $path . '.php';
 	}
-
-	$class = str_replace($prefix, 'class' . DIRECTORY_SEPARATOR, $class);
-	$class = str_replace("\\", DIRECTORY_SEPARATOR, $class);
-	$class = str_replace("_", '-', $class);
-	$class = strtolower($class);
-	
-	require_once VXN_EXPRESS_CORE_PATH . $class . '.php';
-
 });

@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Express Add On\n"
-"POT-Creation-Date: 2022-10-24 15:19+0700\n"
-"PO-Revision-Date: 2022-10-25 11:16+0700\n"
+"POT-Creation-Date: 2022-11-10 22:16+0700\n"
+"PO-Revision-Date: 2022-11-10 22:16+0700\n"
 "Last-Translator: \n"
 "Language-Team: Vaksin https://wp.vaks.in\n"
 "Language: id_ID\n"
@@ -14,173 +14,274 @@ msgstr ""
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-KeywordsList: __\n"
 "X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: modules\n"
 
-#: class/admin/admin-menu.php:43
-msgid "Contact"
-msgstr "Kontak"
+#: app/setup-page-factory.php:21 app/setup-page-factory.php:36
+msgid "Setup"
+msgstr ""
 
-#: class/admin/pages/contact-page.php:34
-msgid "Contact Detail"
-msgstr "Detail Kontak"
-
-#: class/admin/pages/contact-page.php:37
-#: class/breakdance/dynamic-data/fields/contact/contact-phone.php:14
-msgid "Phone"
-msgstr "No. Telp"
-
-#: class/admin/pages/contact-page.php:38
-msgid "Fill in with the complete telephone number e.g. +6281220003131"
-msgstr "Isi dengan nomor telepon lengkap, misalnya +6281220003131"
-
-#: class/admin/pages/contact-page.php:40
-#: class/breakdance/dynamic-data/fields/contact/contact-email.php:15
-msgid "Email"
-msgstr "Email"
-
-#: class/admin/pages/contact-page.php:42
-#: class/breakdance/dynamic-data/fields/contact/contact-address.php:15
-msgid "Address"
-msgstr "Alamat"
-
-#: class/admin/pages/contact-page.php:44
-msgid "Google Business Profile Name"
-msgstr "Nama Google Profil Bisnis"
-
-#: class/admin/pages/contact-page.php:51
-msgid "Social Media"
-msgstr "Media Sosial"
-
-#: class/admin/pages/contact-page.php:53
-#: class/breakdance/dynamic-data/fields/contact/contact-facebook-url.php:15
-msgid "Facebook URL"
-msgstr "Link Facebook"
-
-#: class/admin/pages/contact-page.php:55
-#: class/breakdance/dynamic-data/fields/contact/contact-instagram-url.php:15
-msgid "Instagram URL"
-msgstr "Link Instagram"
-
-#: class/admin/pages/contact-page.php:57
-#: class/breakdance/dynamic-data/fields/contact/contact-twitter-url.php:15
-msgid "Twitter URL"
-msgstr "Link Twitter"
-
-#: class/admin/pages/contact-page.php:59
-#: class/breakdance/dynamic-data/fields/contact/contact-youtube-url.php:15
-msgid "Youtube URL"
-msgstr "Link Youtube"
-
-#: class/admin/pages/contact-page.php:61
-#: class/breakdance/dynamic-data/fields/contact/contact-linkedin-url.php:15
-msgid "LinkedIn URL"
-msgstr "Link LinkedIn"
-
-#: class/admin/pages/setup-page.php:33
+#: app/setup-page-factory.php:38
 msgid "Phone Display Format"
 msgstr "Format Tampilan No. Telp"
 
-#: class/admin/pages/whatsapp-page.php:31
-msgid "WhatsApp Setting"
-msgstr "Setting WhatsApp"
+#: app/setup-page-factory.php:62
+#, php-format
+msgid "Activate %s module"
+msgstr "Aktifkan module %s"
 
-#: class/admin/pages/whatsapp-page.php:35
-msgid "WhatsApp Number"
-msgstr "No. WhatsApp"
+#: packages/breakdance/dynamic-data/bdd-menu-page-field-image.php:42
+#: packages/breakdance/dynamic-data/bdd-menu-page-field-string.php:42
+#: packages/breakdance/dynamic-data/bdd-menu-page-field-url.php:42
+msgid "Express Option Fields"
+msgstr "Express Option Fields"
 
-#: class/admin/pages/whatsapp-page.php:36
-msgid "Fill in with the complete WhatsApp number e.g. 6281220003131"
-msgstr "Isi dengan nomor WhatsApp lengkap, misalnya 6281220003131"
+#: packages/breakdance/dynamic-data/bdd-meta-field-image.php:42
+#: packages/breakdance/dynamic-data/bdd-meta-field-string.php:42
+#: packages/breakdance/dynamic-data/bdd-meta-field-url.php:43
+msgid "Express Meta Fields"
+msgstr "Express Meta Fields"
 
-#: class/admin/pages/whatsapp-page.php:40
-msgid "Show Form"
-msgstr "Tampilkan Form"
+#: packages/breakdance/form-action/bfa-store-post.php:112
+#, php-format
+msgid "%s Submision"
+msgstr "%s Submision"
 
-#: class/admin/pages/whatsapp-page.php:41
-msgid "Show Popup form before redirect to WhatsApp"
-msgstr "Tampilkan Form Popup sebelum dialihkan ke WhatsApp"
+#: packages/wp/menu-page/menu-page-field-renderer.php:197
+#: packages/wp/meta/meta-renderer.php:173
+msgid "Select..."
+msgstr "Pilih..."
 
-#: class/admin/pages/whatsapp-page.php:42
-msgid ""
-"You need to create Breakdance Popup for this function, please read our "
-"documentation"
-msgstr ""
-"Untuk mengaktifkan fungsi ini Anda harus membuat Breakdance Popup, silakan "
-"baca dokumentasi kami"
+#: packages/wp/post-type/post-type-registrar.php:20
+msgid "Add New"
+msgstr "Tambah Baru"
 
-#: class/admin/pages/whatsapp-page.php:49
-msgid "Text Template"
-msgstr "Template Teks"
+#: packages/wp/post-type/post-type-registrar.php:21
+#: packages/wp/taxonomy/taxonomy-registrar.php:17
+#, php-format
+msgid "Add New %s"
+msgstr "Tambah %s Baru"
 
-#: class/admin/pages/whatsapp-page.php:53
-#: class/breakdance/dynamic-data/fields/whatsapp/whatsapp-url.php:51
-msgid "Default Text"
-msgstr "Teks Default"
+#: packages/wp/post-type/post-type-registrar.php:22
+#: packages/wp/taxonomy/taxonomy-registrar.php:19
+#, php-format
+msgid "Edit %s"
+msgstr "Sunting %s"
 
-#: class/admin/pages/whatsapp-page.php:57
-#: class/breakdance/dynamic-data/fields/whatsapp/whatsapp-url.php:52
-msgid "Order Text"
-msgstr "Teks Order"
+#: packages/wp/post-type/post-type-registrar.php:23
+#, php-format
+msgid "New %s"
+msgstr "Tambah %s"
 
-#: class/admin/pages/whatsapp-page.php:61
-#: class/breakdance/dynamic-data/fields/whatsapp/whatsapp-url.php:53
-msgid "Consult Text"
-msgstr "Teks Konsultasi"
+#: packages/wp/post-type/post-type-registrar.php:24
+#: packages/wp/taxonomy/taxonomy-registrar.php:21
+#, php-format
+msgid "All %s"
+msgstr "Semua %s"
 
-#: class/admin/pages/whatsapp-page.php:65
-#: class/breakdance/dynamic-data/fields/whatsapp/whatsapp-url.php:54
-msgid "Product Consult Text"
-msgstr "Teks Konsultasi Produk"
+#: packages/wp/post-type/post-type-registrar.php:25
+#, php-format
+msgid "View %s"
+msgstr "Tampil %s"
 
-#: class/admin/pages/whatsapp-page.php:69
-#: class/breakdance/dynamic-data/fields/whatsapp/whatsapp-url.php:55
-msgid "Appointment Text"
-msgstr "Teks Janji Temu"
+#: packages/wp/post-type/post-type-registrar.php:26
+#: packages/wp/taxonomy/taxonomy-registrar.php:22
+#, php-format
+msgid "Search %s"
+msgstr "Cari %s"
 
-#: class/breakdance/dynamic-data/fields/contact/contact-address-map.php:15
-msgid "Google Map URL"
-msgstr "Link Google Map"
+#: packages/wp/post-type/post-type-registrar.php:27
+#, php-format
+msgid "No %s found"
+msgstr "%s tidak ditemukan"
 
-#: class/breakdance/dynamic-data/fields/contact/contact-address-map.php:23
-#: class/breakdance/dynamic-data/fields/contact/contact-address.php:23
-#: class/breakdance/dynamic-data/fields/contact/contact-email-url.php:23
-#: class/breakdance/dynamic-data/fields/contact/contact-email.php:23
-#: class/breakdance/dynamic-data/fields/contact/contact-facebook-url.php:23
-#: class/breakdance/dynamic-data/fields/contact/contact-instagram-url.php:23
-#: class/breakdance/dynamic-data/fields/contact/contact-linkedin-url.php:23
-#: class/breakdance/dynamic-data/fields/contact/contact-phone-url.php:23
-#: class/breakdance/dynamic-data/fields/contact/contact-phone.php:22
-#: class/breakdance/dynamic-data/fields/contact/contact-twitter-url.php:23
-#: class/breakdance/dynamic-data/fields/contact/contact-youtube-url.php:23
-msgid "Express Contact"
-msgstr "Express Kontak"
+#: packages/wp/post-type/post-type-registrar.php:28
+#, php-format
+msgid "No %s found in the Trash"
+msgstr "%s tidak ditemukan pada Tong Sampah"
 
-#: class/breakdance/dynamic-data/fields/contact/contact-email-url.php:15
-msgid "Email URL"
-msgstr "Link Email"
+#: packages/wp/post-type/post-type-registrar.php:29
+#: packages/wp/taxonomy/taxonomy-registrar.php:24
+#, php-format
+msgid "Parent %s:"
+msgstr "%s Induk:"
 
-#: class/breakdance/dynamic-data/fields/contact/contact-phone-url.php:15
-msgid "Phone URL"
-msgstr "Link No. Telp"
+#: packages/wp/post-type/post-type-registrar.php:31
+#, php-format
+msgid "%s image"
+msgstr "Gambar %s"
 
-#: class/breakdance/dynamic-data/fields/whatsapp/show-whatsapp-form.php:15
-msgid "Is Show WhatsApp Popup"
-msgstr "Tampilkan Popup WhatsApp"
+#: packages/wp/post-type/post-type-registrar.php:32
+#, php-format
+msgid "Set %s image"
+msgstr "Pasang gambar %s"
 
-#: class/breakdance/dynamic-data/fields/whatsapp/show-whatsapp-form.php:23
-#: class/breakdance/dynamic-data/fields/whatsapp/whatsapp-url.php:22
-msgid "Express WhatsApp"
-msgstr "Express WhatsApp"
+#: packages/wp/post-type/post-type-registrar.php:33
+#, php-format
+msgid "Remove %s image"
+msgstr "Hapus gambar %s"
 
-#: class/breakdance/dynamic-data/fields/whatsapp/whatsapp-url.php:14
-msgid "WhatsApp URL"
-msgstr "Link WhatsApp"
+#: packages/wp/taxonomy/taxonomy-registrar.php:18
+#, php-format
+msgid "New %s Name"
+msgstr "Nama Baru %s"
 
-#: class/breakdance/dynamic-data/fields/whatsapp/whatsapp-url.php:69
-msgid "Product Name"
-msgstr "Nama Produk"
+#: packages/wp/taxonomy/taxonomy-registrar.php:20
+#, php-format
+msgid "Update %s"
+msgstr "Update %s"
+
+#: packages/wp/taxonomy/taxonomy-registrar.php:23
+#, php-format
+msgid "Parent %s"
+msgstr "%s Induk"
+
+#~ msgid "Contact Information"
+#~ msgstr "Informasi Kontak"
+
+#~ msgid "Email"
+#~ msgstr "Email"
+
+#~ msgid "Phone"
+#~ msgstr "No. Telp"
+
+#~ msgid "Phone Formatted"
+#~ msgstr "Phone Formatted"
+
+#~ msgid "Address"
+#~ msgstr "Alamat"
+
+#~ msgid "Contact URL"
+#~ msgstr "Link Kontak"
+
+#~ msgid "Email URL"
+#~ msgstr "Link Email"
+
+#~ msgid "Phone URL"
+#~ msgstr "Link No. Telp"
+
+#~ msgid "Google Map URL"
+#~ msgstr "Link Google Map"
+
+#~ msgid "Facebook URL"
+#~ msgstr "Link Facebook"
+
+#~ msgid "Instagram URL"
+#~ msgstr "Link Instagram"
+
+#~ msgid "Twitter URL"
+#~ msgstr "Link Twitter"
+
+#~ msgid "LinkedIn URL"
+#~ msgstr "Link LinkedIn"
+
+#~ msgid "Youtube URL"
+#~ msgstr "Link Youtube"
+
+#~ msgid "Is Show WhatsApp Popup"
+#~ msgstr "Tampilkan Popup WhatsApp"
+
+#~ msgid "WhatsApp URL"
+#~ msgstr "Link WhatsApp"
+
+#~ msgid "Default Text"
+#~ msgstr "Teks Default"
+
+#~ msgid "Order Text"
+#~ msgstr "Teks Order"
+
+#~ msgid "Consult Text"
+#~ msgstr "Teks Konsultasi"
+
+#~ msgid "Product Consult Text"
+#~ msgstr "Teks Konsultasi Produk"
+
+#~ msgid "Appointment Text"
+#~ msgstr "Teks Janji Temu"
+
+#~ msgid "Product Name"
+#~ msgstr "Nama Produk"
+
+#~ msgid "Contact"
+#~ msgstr "Kontak"
+
+#~ msgid "Contact Detail"
+#~ msgstr "Detail Kontak"
+
+#~ msgid "Fill in with the complete telephone number e.g. +6281220003131"
+#~ msgstr "Isi dengan nomor telepon lengkap, misalnya +6281220003131"
+
+#~ msgid "Google Business Profile Name"
+#~ msgstr "Nama Google Profil Bisnis"
+
+#~ msgid "Social Media"
+#~ msgstr "Media Sosial"
+
+#, fuzzy
+#~| msgid "Express Contact"
+#~ msgid "Express Jobs"
+#~ msgstr "Express Kontak"
+
+#, fuzzy
+#~| msgid "Contact Detail"
+#~ msgid "Job Detail"
+#~ msgstr "Detail Kontak"
+
+#, fuzzy
+#~| msgid "Contact"
+#~ msgid "Contractor"
+#~ msgstr "Kontak"
+
+#, fuzzy
+#~| msgid "Location"
+#~ msgid "Job Location"
+#~ msgstr "Lokasi"
+
+#, fuzzy
+#~| msgid "Location"
+#~ msgid "Locality"
+#~ msgstr "Lokasi"
+
+#, fuzzy
+#~| msgid "Express Contact"
+#~ msgid "Express Testimonials"
+#~ msgstr "Express Kontak"
+
+#, fuzzy
+#~| msgid "Address"
+#~ msgid "E-Mail Address"
+#~ msgstr "Alamat"
 
 #~ msgid "Location"
 #~ msgstr "Lokasi"
+
+#, fuzzy
+#~| msgid "WhatsApp URL"
+#~ msgid "WhatsApp"
+#~ msgstr "Link WhatsApp"
+
+#~ msgid "WhatsApp Setting"
+#~ msgstr "Setting WhatsApp"
+
+#~ msgid "WhatsApp Number"
+#~ msgstr "No. WhatsApp"
+
+#~ msgid "Fill in with the complete WhatsApp number e.g. 6281220003131"
+#~ msgstr "Isi dengan nomor WhatsApp lengkap, misalnya 6281220003131"
+
+#~ msgid "Show Form"
+#~ msgstr "Tampilkan Form"
+
+#~ msgid "Show Popup form before redirect to WhatsApp"
+#~ msgstr "Tampilkan Form Popup sebelum dialihkan ke WhatsApp"
+
+#~ msgid "You need to create Breakdance Popup for this function, please read our documentation"
+#~ msgstr "Untuk mengaktifkan fungsi ini Anda harus membuat Breakdance Popup, silakan baca dokumentasi kami"
+
+#~ msgid "Text Template"
+#~ msgstr "Template Teks"
+
+#~ msgid "Express WhatsApp"
+#~ msgstr "Express WhatsApp"
 
 #~ msgid "To display your map based on place and location"
 #~ msgstr "Untuk menampilkan peta Anda berdasarkan tempat dan lokasi"
