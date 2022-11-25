@@ -43,6 +43,9 @@ use Array_Access;
     /** @var string $class */
     protected $class;
 
+    /** @var array $bdd_types default = [] */
+    protected $bdd_types = [];
+
     /** @return mixed  */
     abstract public function get_sanitized_value();
     
@@ -123,5 +126,18 @@ use Array_Access;
     public function set_disabled(bool $disabled) {
         $this->disabled = $disabled;
         return $this;
-    }    
+    }
+
+    /**
+     * @param array|string $bdd_types 
+     * available types: 
+     * 'google map', 
+     * @return void 
+     */
+    public function add_bdd_types($bdd_types){
+        if(!is_array($bdd_types)){
+            $bdd_types = [$bdd_types];
+        }
+        $this->bdd_types = array_unique(array_merge($this->bdd_types, $bdd_types)) ;
+    }
 }

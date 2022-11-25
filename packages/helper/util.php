@@ -196,25 +196,22 @@ class Util {
         return null;
     }
 
-    public static function get_active_element($key, $array) {
-        if(array_key_exists ($key, $array)){
-            return $array;
-        }else{
-            foreach($array as $value){
-                if(is_array($value)){
-                    $val = static::get_active_element($key, $value);
-                    if(!is_null($val)){
-                        return $val;
-                    }
-                }
-            }
-        }
-
-        return null;
-    }
-
     public static function google_map_url($place){
         $url = 'https://www.google.com/maps/search/?api=1&query='. urlencode($place);
         return esc_url($url);
     }
+
+    public static function remove_empty(array $array){
+        $array = array_filter($array, function($var){
+            return !empty($var) || $var === '0';
+        });
+
+        foreach($array as $key => $value){
+            if(is_array($value)){
+                $value = self::remove_empty($value);
+            }
+            $array[$key] = $value;
+        }
+        return $array;
+    }    
 }

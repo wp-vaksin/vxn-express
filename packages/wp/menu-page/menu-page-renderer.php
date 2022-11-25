@@ -79,6 +79,12 @@ class Menu_Page_Renderer {
 		);        
 
         foreach ( $menu_page['sections'] as $section ) {
+            if ($section['div_top_id']){
+                $div_id = $section['div_top_id'];
+                add_settings_section( $section['id'] . '_div_top', '', function () use($div_id) {
+                    echo '<div id=' . esc_attr($div_id) . '></div>';
+                }, $menu_page['slug'] );
+            }
             if ($section['hr_top']){
                 add_settings_section( $section['id'] . '_hr_top', '', function () {echo '<hr>';}, $menu_page['slug'] );
             }

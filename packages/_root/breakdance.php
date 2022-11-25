@@ -68,39 +68,4 @@ class Breakdance{
             defined('__BREAKDANCE_PLUGIN_FILE__') &&  
             in_array(plugin_basename(__BREAKDANCE_PLUGIN_FILE__), apply_filters('active_plugins', get_option('active_plugins'))));
     }
-
-    public static function get_active_element($post_id, $type, $element){
-        $bd_data = Breakdance::get_data($post_id);
-        
-        $parent = self::get_parent_element($element, $bd_data['root']);
-
-        if(!$parent){
-            return [];
-        }
-
-        foreach($parent[$type] as $child){
-            if($child == $element){
-                return $parent[$element];
-            }
-        }
-
-        return [];
-    }
-
-    private static function get_parent_element($key, $array){
-        if(array_key_exists ($key, $array)){
-            return $array;
-        }else{
-            foreach($array as $value){
-                if(is_array($value)){
-                    $val = self::get_parent_element($key, $value);
-                    if(!is_null($val)){
-                        return $val;
-                    }
-                }
-            }
-        }
-        return null;
-    }
-
 }

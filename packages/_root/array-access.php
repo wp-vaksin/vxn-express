@@ -42,4 +42,37 @@ trait Array_Access  {
     public function offsetUnset($offset): void {
         unset($this->$offset);
     }
+
+    /** @return array  */
+    public function get_vars() :array {
+        return $this->validate_array(get_object_vars($this));
+    }
+
+    /**
+     * @param array $array 
+     * @return array 
+     */
+    protected function validate_array($array) :array {
+        foreach($array as $key => $value){
+            if(is_array($value)){
+                $value = $this->validate_array($value);
+            }
+            if(is_object($value)){
+                $value = $this->object_to_array($value);
+            }
+            $array[$key] = $value;
+        }    
+        return $array;
+    }
+
+    /**
+     * @param object $object 
+     * @return array 
+     */
+    protected function object_to_array($object) :array {
+        if(method_exists($object, 'get_vars')){
+            return $object->get_vars();
+        }
+        return get_object_vars($object);
+    }
 }

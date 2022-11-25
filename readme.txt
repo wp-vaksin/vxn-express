@@ -3,9 +3,9 @@ Contributors: vaksin
 Tags: Breakdance, WhatsApp
 Donate link: https://paypal.me/akah
 Requires at least: 5.2
-Tested up to: 6.1
+Tested up to: 6.1.1
 Requires PHP: 7.4
-Stable tag: 1.1.2
+Stable tag: 1.1.3
 License: GPL-2.0+
 License URI: http://www.gnu.org/licenses/gpl-2.0.txt
 
@@ -28,7 +28,7 @@ Express Add-on for Breakdance website builder, the time saver plugin!
 = Minimum Requirements =
 
 * WordPress 5.2 or later
-* Breakdance 1.1-beta or later
+* Breakdance 1.1-beta.2 or later
 
 = AUTOMATIC INSTALLATION =
 
@@ -54,6 +54,9 @@ In the search field type “Express Add On” and click Search Plugins. You can 
 7. Team Members Custom Post type
 
 == Changelog ==
+= 1.1.3 =
+
+* Fix setup page (not load module correctly),  wa-form.js improvement (set focus to when open popup)
 
 = 1.1.2 =
 

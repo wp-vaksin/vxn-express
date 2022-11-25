@@ -129,6 +129,9 @@
 		if(WAFormReady) {
 			updateWaTextValue();
 			WAPopUp.open();
+            setTimeout(function() {
+                WAFields.name.focus();
+            }, 500);
 		} else {
 			openWhatsApp(WATextTemplate);
 		}			

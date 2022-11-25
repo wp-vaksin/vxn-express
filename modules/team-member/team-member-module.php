@@ -35,7 +35,6 @@ class Team_Member_Module implements Module_Interface
         load_plugin_textdomain(VXN_EXPRESS_TEAM_MEMBER_DOMAIN, false, dirname(plugin_basename(VXN_EXPRESS_TEAM_MEMBER_MODULE_FILE)) . '/languages');
 
         add_action('vxn_express_loaded', function () {
-            $post = $this->team_member_post_type();
             Express::add_post_type($this->team_member_post_type());
         });
     }

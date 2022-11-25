@@ -30,6 +30,12 @@ use Array_Access;
 
     /** @var bool $hr_bottom The horizontal line on bottom of section */
     protected $hr_bottom = false;
+
+    /** @var string $div_top_id */
+    protected $div_top_id;
+
+    /** @var string $div_bottom_id */
+    protected $div_bottom_id;
     
     /**
      * @param string $id 
@@ -67,7 +73,7 @@ use Array_Access;
     }
 
     /** @return $this  */
-    public function add_hr_Top() {
+    public function add_hr_top() {
         $this->hr_top = true;
         return $this;
     }
@@ -77,4 +83,24 @@ use Array_Access;
         $this->hr_bottom = true;
         return $this;
     }
+    
+    /**
+     * @param string $div_id 
+     * @return $this 
+     */
+    public function add_div_top($div_id) {
+        $this->div_top_id = $div_id;
+        return $this;
+    }
+
+    /**
+     * @param string $div_id 
+     * @return $this 
+     */
+    public function add_div_bottom($div_id) {
+        $this->div_bottom_id = $div_id;
+        return $this;
+    }
+
+    
 }

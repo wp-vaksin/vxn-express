@@ -16,7 +16,7 @@ class Whatsapp_Popup  {
         }elseif($saved_wa_param && Express::Options('vxn_express_whatsapp.chk_show_form')){
             $script = (New Script('vxn_wa_form', VXN_EXPRESS_WHATSAPP_URL . '/assets/front/js/wa-form.js'))
                         ->set_data(array(self::class, 'script_data'))
-                        ->set_ver('1.0.2');         
+                        ->set_ver('1.0.3');         
             Express::add_script($script);
         }
     }

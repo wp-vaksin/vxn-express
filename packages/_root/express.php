@@ -118,9 +118,15 @@ use Array_Access;
     public static function nav_tabs($parent_slug){
         if(!array_key_exists($parent_slug, self::$nav_tabs)){
             $nav_tabs =[];
+            $parent_tab = [];
             foreach(Express::menu_pages() as $menu_page){
-                if(($menu_page['parent_slug'] == $parent_slug) || $menu_page['slug'] == $parent_slug){
-                    if($menu_page['tab_title']){
+                if($menu_page['tab_title']){
+                    if($menu_page['slug'] == $parent_slug){
+                        $parent_tab = [
+                            'slug'=> $menu_page['slug'], 
+                            'title'=>$menu_page['tab_title']
+                        ];    
+                    }elseif($menu_page['parent_slug'] == $parent_slug){
                         $nav_tabs[$menu_page['slug']] = [
                             'slug'=> $menu_page['slug'], 
                             'title'=>$menu_page['tab_title']
@@ -128,6 +134,11 @@ use Array_Access;
                     }
                 }
             }
+
+            if(!empty($parent_tab)){
+                array_unshift($nav_tabs, $parent_tab);
+            }
+
             self::$nav_tabs[$parent_slug] = $nav_tabs;
         }
         return self::$nav_tabs[$parent_slug];
@@ -212,5 +223,15 @@ use Array_Access;
         }  
 
         return '';
+    }
+
+    public static function sort_page_menu(){
+        usort(self::$menu_pages, function ($a, $b)
+        {
+            if ($a['position'] == $b['position']) {
+                return 0;
+            }
+            return ($a['position'] < $b['position']) ? -1 : 1;
+        });             
     }
 }

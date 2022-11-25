@@ -21,6 +21,7 @@ class Menu_Pages_Builder {
     public static function build()
     {
         if( is_admin() ){
+            Express::sort_page_menu();
             self::create_menu_pages();
         }else{
             self::create_shortcodes();
